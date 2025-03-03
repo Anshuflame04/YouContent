@@ -1,0 +1,142 @@
+/* Ensure navbar stays fixed at the top */
+.navbar-custom {
+  background-color: #343a40;  /* Dark background */
+  padding: 10px 20px;  /* Add padding for better spacing */
+  z-index: 1000;  /* Ensure it's on top of other content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease-in-out;  /* Smooth background color change */
+}
+
+/* Add space below the navbar to prevent content from being hidden behind */
+body {
+  padding-top: 80px; /* Adjust according to navbar height */
+}
+
+/* Navbar Brand */
+.brand {
+  font-size: 1.8rem;  /* Larger font for the brand */
+  font-weight: bold;
+  color: white;
+}
+
+/* Align navbar items to the right */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;  /* Align all links to the right */
+  width: 100%;  /* Ensure it takes full width */
+  position: relative;  /* Ensure it's positioned relative to the navbar */
+  z-index: 2; /* Ensures navbar items are on top of background elements */
+}
+
+/* Styling individual links */
+.nav-link {
+  padding: 10px 15px;  /* Add spacing around the links */
+  font-size: 1.1rem;  /* Slightly larger font size */
+  transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition on hover */
+  color: white; /* White text color */
+}
+
+/* Add a bit of space between buttons */
+.nav-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Make the buttons look more prominent */
+.btn-dark {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #495057;  /* Slightly lighter dark color */
+  border-color: #495057;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* On hover effect for the navbar links */
+.nav-link:hover, .btn-dark:hover {
+  color: white;
+  background-color: #5bc0de;  /* Light blue color on hover */
+  border-color: #5bc0de;  /* Matching border color */
+}
+
+/* Styling the custom navbar toggle button (menu and close icon) */
+.custom-navbar-toggler {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer;
+  z-index: 9999; /* Ensure it’s in front of other content */
+}
+
+.menu-icon {
+  width: 28px;  /* Slightly smaller icon size */
+  height: 28px;
+  filter: invert(1);  /* Change the icon color to white */
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+/* Responsive Design for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;  /* Hide navbar links by default */
+    flex-direction: column;  /* Stack links vertically */
+    align-items: center;  /* Center items horizontally */
+    background-color: #343a40;  /* Background for the collapsed navbar */
+    position: absolute;
+    top: 8.2px;
+    right: 0;
+    width: 100%;  /* Make it take full width */
+    padding: 20px 0;
+    z-index: 999; /* Bring the collapsed menu in front */
+    transition: all 0.3s ease-in-out;  /* Smooth transition for opening/closing */
+    border-radius: 10px;  /* Make the box slightly rounded */
+  }
+
+  /* Show the navbar links when menu is open */
+  .navbar-collapse.show {
+    display: flex;
+    transform: translateY(0); /* Slide in the menu from top */
+  }
+
+  /* Show the toggle button (menu icon) on mobile */
+  .custom-navbar-toggler {
+    display: block; /* Show on small screens */
+  }
+
+  /* Style for each nav link in mobile view */
+  .nav-link {
+    padding: 15px 20px;
+    font-size: 1.2rem;  /* Adjust font size */
+    width: 100%;
+    text-align: center;  /* Center text */
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+  }
+
+  /* Hover effect on nav links in mobile */
+  .nav-link:hover {
+    background-color: #5bc0de;  /* Light blue background on hover */
+    color: white;
+  }
+
+  /* Styling for the login button */
+  .btn-dark {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+  }
+
+  .btn-dark:hover {
+    background-color: #5bc0de;  /* Light blue background on hover */
+    color: white;
+  }
+}
+.fan-icon1 {
+  width: 30px;  /* Adjust size as needed */
+  height: auto;
+  margin-left: 10px; /* Space between text and icon */
+  vertical-align: middle;
+  
+}
+
+

@@ -1,0 +1,86 @@
+/* Main container */
+.page2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background-color: #f0f4f8; /* Light blue background for the whole page */
+}
+
+/* Button grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+/* Individual grid item for each button (whole box is clickable) */
+.grid-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #3a4a7f; /* Dark blue background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Hover effect on the whole grid-item (card) */
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of the button */
+.button-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White color for title */
+    margin-bottom: 0.5rem;
+}
+
+/* Description text inside the card */
+.button-description {
+    font-size: 0.9rem;
+    color: #d0d9e4; /* Light greyish-blue for description */
+    margin-top: 0.5rem;
+}
+
+/* Styling for active page content */
+.text2img-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text2img-container h2 {
+    margin-bottom: 1rem;
+    color: #3a4a7f; /* Dark blue color for heading */
+}
+
+/* Back button styling */
+.back-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4a90e2; /* Blue background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #357ab7; /* Slightly darker blue on hover */
+}

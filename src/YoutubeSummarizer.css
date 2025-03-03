@@ -1,0 +1,97 @@
+.summarizer-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e2e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #ffffff; /* Light text */
+}
+
+h1 {
+  text-align: center;
+  color: #f1f1f1; /* Light gray text */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.youtube-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #333; /* Subtle border */
+  font-size: 1em;
+  background-color: #282842; /* Darker input background */
+  color: #ccc; /* Light text */
+  transition: border-color 0.3s ease;
+}
+
+.youtube-input:focus {
+  outline: none;
+  border-color: #007bff; /* Blue accent */
+}
+
+.video-thumbnail {
+  max-width: 40%; /* Thumbnail size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  margin-top: 10px;
+}
+
+.summarize-btn {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #007bff; /* Blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Subtle button glow */
+}
+
+.summarize-btn:disabled {
+  background-color: #555; /* Disabled button */
+  cursor: not-allowed;
+}
+
+.summarize-btn:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-message {
+  color: #ff5252; /* Bright red for errors */
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.summary-section {
+  margin-top: 20px;
+  background-color: #282842; /* Darker background for summary */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #f1f1f1; /* Light text */
+}
+
+.summary-section h2 {
+  font-size: 1.5em;
+  color: #ffffff; /* White text for section heading */
+}
+
+.summary-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for summary text */
+  margin-top: 10px;
+}

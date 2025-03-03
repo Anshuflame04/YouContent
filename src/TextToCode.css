@@ -1,0 +1,124 @@
+.text-to-code {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e2e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #ffffff; /* Light text */
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #f1f1f1; /* Light gray */
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 8px;
+  font-size: 1em;
+  resize: vertical;
+  background-color: #282842; /* Darker input background */
+  color: #ccc; /* Light text */
+  transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Blue accent */
+}
+
+.language-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #282842; /* Darker input background */
+  color: #ccc; /* Light text */
+  transition: border-color 0.3s ease;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #007bff; /* Blue accent */
+}
+
+.generate-button {
+  width: 100%;
+  background-color: #007bff; /* Blue button */
+  color: #ffffff; /* White text */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Subtle button glow */
+}
+
+.generate-button:disabled {
+  background-color: #555; /* Disabled button */
+  cursor: not-allowed;
+}
+
+.generate-button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.generate-button.loading {
+  background-color: #555; /* Loading state */
+}
+
+.generated-output {
+  margin-top: 20px;
+  background-color: #282842; /* Darker output background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #ffffff; /* Light text */
+}
+
+.code-block {
+  background-color: #2e2e2e; /* Darker code block */
+  color: #f1f1f1; /* Light text for code */
+  padding: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+.copy-button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Subtle button glow */
+}
+
+.copy-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.copy-button:active {
+  background-color: #004085; /* Even darker blue on active */
+}
+
+textarea:focus, .language-select:focus, .generate-button:focus, .copy-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue focus glow */
+}

@@ -1,0 +1,122 @@
+.text-to-article {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1e1e2e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #ffffff; /* White text */
+}
+
+.title {
+  text-align: center;
+  color: #f1f1f1; /* Light gray text */
+  font-size: 2.4em;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.platform-selector {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.platform-selector label {
+  font-size: 1.1em;
+  color: #ccc; /* Light text */
+}
+
+.platform-selector select {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #333; /* Subtle border */
+  background-color: #282842; /* Darker input background */
+  color: #ccc; /* Light text */
+  transition: all 0.3s ease;
+}
+
+.platform-selector select:hover {
+  border-color: #007bff;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 1px solid #333; /* Subtle border */
+  margin-bottom: 25px;
+  resize: vertical;
+  min-height: 120px;
+  box-sizing: border-box;
+  background-color: #282842; /* Darker input background */
+  color: #ccc; /* Light text */
+  transition: all 0.3s ease;
+}
+
+.textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.generate-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Subtle glow effect */
+}
+
+.generate-button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.generate-button:disabled {
+  background-color: #555; /* Disabled button */
+  cursor: not-allowed;
+}
+
+.loading {
+  background-color: #555; /* Loading state color */
+}
+
+.generated-output {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #333; /* Subtle border */
+  background-color: #282842; /* Matching dark background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  color: #f1f1f1; /* White text */
+}
+
+.generated-output h2 {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+  color: #f1f1f1; /* Light gray */
+}
+
+.generated-output p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ccc; /* Light text */
+  margin-bottom: 15px;
+}
+
+.generated-output code {
+  background-color: #333; /* Dark code block */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.95em;
+  color: #f1f1f1; /* Light text */
+}

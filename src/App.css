@@ -1,0 +1,194 @@
+/* app.css */
+
+/* App container to center content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background for the app */
+}
+
+/* Basic styling for page titles or headers */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Centering main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Buttons styling */
+.button-primary {
+  background-color: #007bff;  /* Blue background */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+.button-secondary {
+  background-color: #6c757d;  /* Gray background */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #495057;  /* Darker gray on hover */
+}
+
+/* Utility classes for spacing */
+.padding-20 {
+  padding: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+/* Navbar styles */
+.navbar-custom {
+  background-color: #343a40;  /* Dark background */
+  padding: 10px 20px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.navbar-custom .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Adjusting navbar links */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Hover effect on navbar links */
+.nav-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar-custom .btn-dark {
+  padding: 8px 15px;
+  background-color: #495057;
+  border-color: #495057;
+  font-size: 1rem;
+}
+
+.navbar-custom .btn-dark:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Navbar toggle button for mobile */
+.custom-navbar-toggler {
+  display: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+}
+
+/* Navbar collapse on mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343a40;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .btn-dark {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #007bff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

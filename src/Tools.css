@@ -1,0 +1,102 @@
+/* Tools Section */
+.tools {
+  padding: 50px;
+  background: #121212;  /* Dark background */
+  color: #ffffff;
+  text-align: center;
+  min-height: 100%;  /* Ensure it takes full viewport height */
+}
+
+/* Tools Grid Layout */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Flexible grid with responsive column sizes */
+  gap: 20px;
+  justify-items: center;  /* Center the items inside each grid cell */
+  align-items: stretch;  /* Ensure all items are stretched to the same height */
+  margin-top: 30px;
+}
+
+/* Individual Tool Box */
+.tool {
+  background: #1e1e2e;  /* Dark background for the tool items */
+  padding: 20px;
+  border-radius: 15px;  /* Slightly rounded corners */
+  border: 1px solid #333;  /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Light shadow for depth */
+  display: flex;
+  flex-direction: column;  /* Stack content vertically */
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;  /* Ensure the height is consistent for each tool */
+  transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover Effects for the Tool */
+.tool:hover {
+  background: #282842;  /* Slightly lighter background */
+  transform: scale(1.05);  /* Slight scaling effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  /* Stronger shadow effect */
+}
+
+/* Tool Title Styling */
+.tool h3 {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tool Description or Button Styling */
+.tool p,
+.tool button {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Button Style within Tools */
+.tool button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.tool button:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* For laptop screens and larger (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);  /* 3 items per row */
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 items per row */
+  }
+}
+
+/* For extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: 1fr;  /* 1 item per row */
+  }
+}
+/* Icon Styling */
+.tool-icon {
+  font-size: 2.5rem; /* Set icon size */
+  color: #007bff; /* Blue color for the icons */
+  margin-bottom: 15px; /* Add some spacing below the icon */
+}
